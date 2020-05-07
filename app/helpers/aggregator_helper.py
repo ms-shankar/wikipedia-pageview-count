@@ -30,7 +30,10 @@ def process_file(language, keyword, path):
 
     with gzip.open(path, 'rt') as f:
         for line in f:
-            if line.startswith(search_string) or (line.startswith(language) and keyword in line):
+            if line.startswith(search_string) or \
+                    (line.startswith(language) and keyword in line) or \
+                    (line.startswith(language) and keyword.upper() in line) or \
+                    (line.startswith(language) and keyword.title() in line):
 
                 # Split lines into words
                 words = line.split(' ')
