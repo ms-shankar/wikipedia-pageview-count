@@ -8,12 +8,12 @@ from app.helpers.aggregator_helper import get_stored_file_paths, process_file
 def process_file_test_inputs():
     # parametrize input data and expected result as test case inputs
     return [
-        ('en', 'bitcoin', TEST_FILE_PATH_1, 9),
-        ('en', 'bitcoin', TEST_FILE_PATH_2, 9),
-        ('en', 'bitcoin', TEST_FILE_PATH_3, 10),
-        ('en', 'java', TEST_FILE_PATH_1, 108),
-        ('en', 'java', TEST_FILE_PATH_2, 121),
-        ('de', 'java', TEST_FILE_PATH_3, 11),
+        ('en', 'bitcoin', TEST_FILE_PATH_1, 156),
+        ('en', 'bitcoin', TEST_FILE_PATH_2, 19),
+        ('en', 'bitcoin', TEST_FILE_PATH_3, 154),
+        ('en', 'java', TEST_FILE_PATH_1, 8),
+        ('en', 'java', TEST_FILE_PATH_2, 8),
+        ('de', 'java', TEST_FILE_PATH_1, 10),
     ]
 
 
